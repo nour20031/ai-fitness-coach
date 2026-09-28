@@ -1,0 +1,12 @@
+flowchart TB
+    A[Original volunteer videos<br/>23 videos, 4 participants] --> B[Anonymous IDs + verified labels]
+    B --> C[Managed raw dataset<br/>dataset/raw]
+    C --> D[Dataset manifest generation]
+    D --> E[Quality audit]
+    E --> F[Repetition segmentation<br/>187 detected from 230 expected]
+    F --> G[Original benchmark videos<br/>23 original recordings]
+    F --> H[Rep clips<br/>derived, not new participants]
+    G --> I[Controlled robustness variants<br/>derived, not independent data]
+    G --> J[Evaluation outputs]
+    H --> J
+    I --> J

@@ -1,0 +1,16 @@
+scenario_id,scenario,robustness_id,source_video_id,condition,exercise,verified_label,status,coaching_blocked,detected_reps,predicted_form_label,confidence_status,confidence_reasons,gemma_status,final_response,failure_stage,expected_behaviour,passed
+P12-E2E-001,baseline_success,vid16_baseline,vid16,baseline,squat,correct,success,False,10,correct,HIGH,,success,Your squat form looks good overall! You're maintaining a good knee angle throughout the movement.  Remember to keep your knees tracking in line with your toes.,,HIGH confidence should allow Gemma to produce grounded feedback from the transformed analysis facts.,True
+P12-E2E-002,darker_success,vid16_darker,vid16,darker,squat,correct,success,False,10,correct,HIGH,,success,"Your squat form looks good overall! You're mostly maintaining a good knee angle throughout the movement.  
+
+Here are a few things to keep in mind: 
+
+* **Focus on maintaining a consistent knee angle:** Aim for a minimum knee angle of 59 degrees throughout the movement. 
+* **Keep your knees aligned:**  Make sure your knees track in line with your toes. 
+
+
+Keep practicing and you'll continue to improve!",,HIGH confidence should allow Gemma to produce grounded feedback from the transformed analysis facts.,True
+P12-E2E-003,crop_high_confidence_rep_error,vid01_crop,vid01,crop,bicep_curl,correct,success,False,2,correct,HIGH,,success,"Your bicep curls look good! You're maintaining a good form with your elbows and shoulders.  You're hitting the target angles for the exercise. 
+
+Remember to keep your elbows close to your body and your shoulders relaxed.",,HIGH confidence should allow Gemma to produce grounded feedback from the transformed analysis facts.,True
+P12-E2E-004,occlusion_low_confidence_block,vid13_occlusion,vid13,occlusion,bicep_curl,half_range,blocked,True,0,unknown,LOW,LOW_REQUIRED_JOINT_AVAILABILITY;LOW_ANGLE_CALCULABILITY;NO_REPS_DETECTED,blocked,Analysis confidence is low because no valid repetitions were detected. Please record again with the full movement visible. The system should not give confident form coaching from this attempt.,,LOW confidence should block normal Gemma coaching and return re-record guidance.,True
+P12-E2E-005,fast_movement_timing_stress,vid16_fast_movement,vid16,fast_movement,squat,correct,success,False,10,correct,HIGH,,success,Your squat form looks good! You're mostly maintaining a good knee angle of 55 degrees or more.  Keep working on that!,,HIGH confidence should allow Gemma to produce grounded feedback from the transformed analysis facts.,True

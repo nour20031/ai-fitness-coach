@@ -1,0 +1,56 @@
+# Python / environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit / local settings
+.streamlit/
+*.log
+*.tmp
+.env
+.env.*
+secrets.toml
+
+# Private volunteer media and derived media
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.wav
+*.mp3
+*.m4a
+*.ogg
+
+dataset/raw/
+dataset/clips/
+dataset/augmented/
+dataset/external/
+dataset/processed/robustness/videos/
+dataset/processed/evaluation/tts/audio/
+dataset/processed/evaluation/technical_testing/audio/
+dataset/stt/audio/
+
+# Downloaded model binaries
+models/whisper/
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/*.tflite
+
+# Local reports or private university materials
+*.docx
+*.pdf
+*.pptx
+*.xlsx
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+condition,video_count,mean_abs_error_difference,median_abs_error_difference,improved_count,unchanged_count,worsened_count,wilcoxon_statistic,wilcoxon_p_value,statistical_notes
+darker,23,-0.0435,0.0,2,20,1,,,Wilcoxon not run: No module named 'scipy'
+brighter,23,-0.087,0.0,1,22,0,,,Wilcoxon not run: No module named 'scipy'
+rotation,23,0.0,0.0,1,21,1,,,Wilcoxon not run: No module named 'scipy'
+crop,23,-0.0435,0.0,3,18,2,,,Wilcoxon not run: No module named 'scipy'
+partial_body,23,2.4783,0.0,3,11,9,,,Wilcoxon not run: No module named 'scipy'
+poor_framing,23,-0.0435,0.0,3,18,2,,,Wilcoxon not run: No module named 'scipy'
+fast_movement,23,0.1304,0.0,2,17,4,,,Wilcoxon not run: No module named 'scipy'
+occlusion,23,2.8261,1.0,2,5,16,,,Wilcoxon not run: No module named 'scipy'

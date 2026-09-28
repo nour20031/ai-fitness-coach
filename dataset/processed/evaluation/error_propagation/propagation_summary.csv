@@ -1,0 +1,3 @@
+pipeline,total_cases,no_propagation,stopped,propagated_transparently,propagated_to_incorrect_output,confidence_blocked_error_cases,high_confidence_allowed_incorrect_facts,intent_preserved_or_changed,final_answer_changed
+visual,10,3,4,0,3,4,3,,
+audio,10,2,0,5,3,,,INTENT_CHANGED=3; INTENT_PARTIALLY_CHANGED=3; INTENT_PRESERVED=4,9

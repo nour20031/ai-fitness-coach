@@ -1,0 +1,7 @@
+check,passed,detail
+A_clear_session_removes_previous_result,True,"Analysis, video path, preview frame, question result, and analysed_video_id were cleared."
+B_new_upload_invalidates_old_result,True,New upload received a new active_video_id and previous result was cleared.
+C_new_recording_invalidates_old_result,True,New recording received a new active_video_id and previous result was cleared.
+D_exercise_change_clears_analysis,True,Exercise-change reset cleared analysis while keeping the active video.
+E_ready_option_change_clears_analysis,True,Ready-option reset cleared the previous curl analysis.
+F_clear_session_versions_widgets,True,"Widget keys include session_generation, so clearing creates fresh uploader/audio widgets."

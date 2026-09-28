@@ -1,0 +1,25 @@
+audio_id,reference_text,audio_path,category
+stt_001,Why was my squat marked as shallow?,dataset/stt/audio/stt_001.wav,form question
+stt_002,How many reps did I complete?,dataset/stt/audio/stt_002.wav,repetition question
+stt_003,How can I improve my curl?,dataset/stt/audio/stt_003.wav,improvement question
+stt_004,Were my squats deep enough?,dataset/stt/audio/stt_004.wav,form question
+stt_005,Why was my curl marked as half range?,dataset/stt/audio/stt_005.wav,form question
+stt_006,How many good reps did I do?,dataset/stt/audio/stt_006.wav,repetition question
+stt_007,Was my form correct?,dataset/stt/audio/stt_007.wav,form question
+stt_008,What should I improve next time?,dataset/stt/audio/stt_008.wav,improvement question
+stt_009,Why is the analysis confidence low?,dataset/stt/audio/stt_009.wav,confidence question
+stt_010,Should I record the video again?,dataset/stt/audio/stt_010.wav,confidence question
+stt_011,Which body part was not visible?,dataset/stt/audio/stt_011.wav,confidence question
+stt_012,Did I complete the full range of motion?,dataset/stt/audio/stt_012.wav,form question
+stt_013,How do I make my squat deeper?,dataset/stt/audio/stt_013.wav,improvement question
+stt_014,How do I avoid swinging during curls?,dataset/stt/audio/stt_014.wav,improvement question
+stt_015,How many shallow reps did I do?,dataset/stt/audio/stt_015.wav,repetition question
+stt_016,How many half range curls did I do?,dataset/stt/audio/stt_016.wav,repetition question
+stt_017,Was the camera angle good enough?,dataset/stt/audio/stt_017.wav,confidence question
+stt_018,Why did the system not count my reps?,dataset/stt/audio/stt_018.wav,repetition question
+stt_019,Can I trust this feedback?,dataset/stt/audio/stt_019.wav,confidence question
+stt_020,What does low confidence mean?,dataset/stt/audio/stt_020.wav,confidence question
+stt_021,Did my knees bend enough in the squat?,dataset/stt/audio/stt_021.wav,form question
+stt_022,Did my elbows bend enough in the curl?,dataset/stt/audio/stt_022.wav,form question
+stt_023,What should I fix before my next set?,dataset/stt/audio/stt_023.wav,improvement question
+stt_024,Can you explain my results simply?,dataset/stt/audio/stt_024.wav,improvement question

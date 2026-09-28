@@ -1,0 +1,993 @@
+{
+  "A": {
+    "video_path": "./dataset\\raw\\squat\\correct\\side\\participant01_squat_correct_side_set01.mp4",
+    "exercise": "squat",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {},
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_knee_angle": 67.0,
+              "issues": []
+            },
+            {
+              "rep": 2,
+              "min_knee_angle": 58.0,
+              "issues": []
+            },
+            {
+              "rep": 3,
+              "min_knee_angle": 61.9,
+              "issues": []
+            },
+            {
+              "rep": 4,
+              "min_knee_angle": 60.7,
+              "issues": []
+            },
+            {
+              "rep": 5,
+              "min_knee_angle": 60.3,
+              "issues": []
+            },
+            {
+              "rep": 6,
+              "min_knee_angle": 60.1,
+              "issues": []
+            },
+            {
+              "rep": 7,
+              "min_knee_angle": 60.3,
+              "issues": []
+            },
+            {
+              "rep": 8,
+              "min_knee_angle": 62.1,
+              "issues": []
+            },
+            {
+              "rep": 9,
+              "min_knee_angle": 56.3,
+              "issues": []
+            },
+            {
+              "rep": 10,
+              "min_knee_angle": 60.3,
+              "issues": []
+            }
+          ],
+          "predicted_form_label": "correct",
+          "form_label_reason": "majority_of_detected_reps_reached_depth_threshold",
+          "thresholds": {
+            "knee_bad_depth": 115,
+            "knee_down_trigger": 165,
+            "knee_up_trigger": 165,
+            "minimum_down_frames": 3
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 105.61,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='squat', rep_count=10, form_label='correct', detected_issues=[], measured_features={'minimum_knee_angle': np.float64(56.3), 'per_rep_min_knee_angles': [np.float64(67.0), np.float64(58.0), np.float64(61.9), np.float64(60.7), np.float64(60.3), np.float64(60.1), np.float64(60.3), np.float64(62.1), np.float64(56.3), np.float64(60.3)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(105.61), 'processed_frames': 802, 'pose_detected_frames': 802}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_knee_angle': np.float64(67.0), 'issues': []}, {'rep': 2, 'min_knee_angle': np.float64(58.0), 'issues': []}, {'rep': 3, 'min_knee_angle': np.float64(61.9), 'issues': []}, {'rep': 4, 'min_knee_angle': np.float64(60.7), 'issues': []}, {'rep': 5, 'min_knee_angle': np.float64(60.3), 'issues': []}, {'rep': 6, 'min_knee_angle': np.float64(60.1), 'issues': []}, {'rep': 7, 'min_knee_angle': np.float64(60.3), 'issues': []}, {'rep': 8, 'min_knee_angle': np.float64(62.1), 'issues': []}, {'rep': 9, 'min_knee_angle': np.float64(56.3), 'issues': []}, {'rep': 10, 'min_knee_angle': np.float64(60.3), 'issues': []}], thresholds={'knee_bad_depth': 115, 'knee_down_trigger': 165, 'knee_up_trigger': 165, 'minimum_down_frames': 3})",
+        "processing_time_seconds": 23.9793
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "Your squat form looks good overall! You're maintaining a good knee angle throughout the movement.  Focus on keeping your knees tracking in line with your toes.",
+        "latency_seconds": 4.2451,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 105.61,\n    \"pose_detected_frames\": 802,\n    \"processed_frames\": 802,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [],\n  \"exercise\": \"squat\",\n  \"form_label\": \"correct\",\n  \"measured_features\": {\n    \"minimum_knee_angle\": 56.3,\n    \"per_rep_min_knee_angles\": [\n      67.0,\n      58.0,\n      61.9,\n      60.7,\n      60.3,\n      60.1,\n      60.3,\n      62.1,\n      56.3,\n      60.3\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 67.0,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 58.0,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 61.9,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.7,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.1,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 62.1,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 56.3,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"knee_bad_depth\": 115,\n    \"knee_down_trigger\": 165,\n    \"knee_up_trigger\": 165,\n    \"minimum_down_frames\": 3\n  }\n}\n\nUser question: Give me concise coaching feedback for this squat set.\n\nAnswer:"
+      }
+    }
+  },
+  "B": {
+    "video_path": "./dataset\\raw\\squat\\shallow\\side\\participant04_squat_shallow_side_set01.mp4",
+    "exercise": "squat",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {
+            "not_deep_enough": 8
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_knee_angle": 119.1,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 2,
+              "min_knee_angle": 114.7,
+              "issues": []
+            },
+            {
+              "rep": 3,
+              "min_knee_angle": 121.9,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 4,
+              "min_knee_angle": 113.4,
+              "issues": []
+            },
+            {
+              "rep": 5,
+              "min_knee_angle": 130.6,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 6,
+              "min_knee_angle": 128.2,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 7,
+              "min_knee_angle": 129.0,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 8,
+              "min_knee_angle": 127.8,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 9,
+              "min_knee_angle": 124.5,
+              "issues": [
+                "not_deep_enough"
+              ]
+            },
+            {
+              "rep": 10,
+              "min_knee_angle": 120.6,
+              "issues": [
+                "not_deep_enough"
+              ]
+            }
+          ],
+          "predicted_form_label": "shallow",
+          "form_label_reason": "majority_of_detected_reps_above_depth_threshold",
+          "thresholds": {
+            "knee_bad_depth": 115,
+            "knee_down_trigger": 165,
+            "knee_up_trigger": 165,
+            "minimum_down_frames": 3
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 0.9833,
+          "angle_calculability_rate": 0.9833,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 48.05,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='squat', rep_count=10, form_label='shallow', detected_issues=['not_deep_enough'], measured_features={'minimum_knee_angle': np.float64(113.4), 'per_rep_min_knee_angles': [np.float64(119.1), np.float64(114.7), np.float64(121.9), np.float64(113.4), np.float64(130.6), np.float64(128.2), np.float64(129.0), np.float64(127.8), np.float64(124.5), np.float64(120.6)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 0.9833, 'angle_calculability_rate': 0.9833, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(48.05), 'processed_frames': 780, 'pose_detected_frames': 780}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_knee_angle': np.float64(119.1), 'issues': ['not_deep_enough']}, {'rep': 2, 'min_knee_angle': np.float64(114.7), 'issues': []}, {'rep': 3, 'min_knee_angle': np.float64(121.9), 'issues': ['not_deep_enough']}, {'rep': 4, 'min_knee_angle': np.float64(113.4), 'issues': []}, {'rep': 5, 'min_knee_angle': np.float64(130.6), 'issues': ['not_deep_enough']}, {'rep': 6, 'min_knee_angle': np.float64(128.2), 'issues': ['not_deep_enough']}, {'rep': 7, 'min_knee_angle': np.float64(129.0), 'issues': ['not_deep_enough']}, {'rep': 8, 'min_knee_angle': np.float64(127.8), 'issues': ['not_deep_enough']}, {'rep': 9, 'min_knee_angle': np.float64(124.5), 'issues': ['not_deep_enough']}, {'rep': 10, 'min_knee_angle': np.float64(120.6), 'issues': ['not_deep_enough']}], thresholds={'knee_bad_depth': 115, 'knee_down_trigger': 165, 'knee_up_trigger': 165, 'minimum_down_frames': 3})",
+        "processing_time_seconds": 21.7113
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "The analysis detected that your squat form was shallow.  This means your knees didn't go deep enough during the squat.  The minimum knee angle was 113.4 degrees, which is less than the minimum depth threshold.",
+        "latency_seconds": 1.1542,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 0.9833,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 48.05,\n    \"pose_detected_frames\": 780,\n    \"processed_frames\": 780,\n    \"required_joint_availability\": 0.9833,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [\n    \"not_deep_enough\"\n  ],\n  \"exercise\": \"squat\",\n  \"form_label\": \"shallow\",\n  \"measured_features\": {\n    \"minimum_knee_angle\": 113.4,\n    \"per_rep_min_knee_angles\": [\n      119.1,\n      114.7,\n      121.9,\n      113.4,\n      130.6,\n      128.2,\n      129.0,\n      127.8,\n      124.5,\n      120.6\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 119.1,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 114.7,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 121.9,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 113.4,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 130.6,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 128.2,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 129.0,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 127.8,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 124.5,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [\n        \"not_deep_enough\"\n      ],\n      \"min_knee_angle\": 120.6,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"knee_bad_depth\": 115,\n    \"knee_down_trigger\": 165,\n    \"knee_up_trigger\": 165,\n    \"minimum_down_frames\": 3\n  }\n}\n\nUser question: Why was this squat marked as shallow?\n\nAnswer:"
+      }
+    }
+  },
+  "C": {
+    "video_path": "./dataset\\raw\\bicep_curl\\correct\\side\\participant03_bicep_curl_correct_side_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {},
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 31.6,
+              "max_elbow_angle": 168.5,
+              "max_shoulder_deviation": 4.0,
+              "issues": []
+            },
+            {
+              "rep": 2,
+              "min_elbow_angle": 37.1,
+              "max_elbow_angle": 174.0,
+              "max_shoulder_deviation": 45.0,
+              "issues": []
+            },
+            {
+              "rep": 3,
+              "min_elbow_angle": 35.7,
+              "max_elbow_angle": 169.0,
+              "max_shoulder_deviation": 12.5,
+              "issues": []
+            },
+            {
+              "rep": 4,
+              "min_elbow_angle": 36.0,
+              "max_elbow_angle": 169.8,
+              "max_shoulder_deviation": 27.0,
+              "issues": []
+            },
+            {
+              "rep": 5,
+              "min_elbow_angle": 36.1,
+              "max_elbow_angle": 165.0,
+              "max_shoulder_deviation": 7.5,
+              "issues": []
+            },
+            {
+              "rep": 6,
+              "min_elbow_angle": 33.7,
+              "max_elbow_angle": 164.6,
+              "max_shoulder_deviation": 9.0,
+              "issues": []
+            },
+            {
+              "rep": 7,
+              "min_elbow_angle": 37.0,
+              "max_elbow_angle": 166.2,
+              "max_shoulder_deviation": 8.0,
+              "issues": []
+            },
+            {
+              "rep": 8,
+              "min_elbow_angle": 37.7,
+              "max_elbow_angle": 163.6,
+              "max_shoulder_deviation": 3.5,
+              "issues": []
+            },
+            {
+              "rep": 9,
+              "min_elbow_angle": 39.1,
+              "max_elbow_angle": 160.5,
+              "max_shoulder_deviation": 4.0,
+              "issues": []
+            },
+            {
+              "rep": 10,
+              "min_elbow_angle": 37.8,
+              "max_elbow_angle": 163.7,
+              "max_shoulder_deviation": 20.5,
+              "issues": []
+            }
+          ],
+          "predicted_form_label": "correct",
+          "form_label_reason": "majority_of_detected_reps_reached_full_range_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 124.74,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=10, form_label='correct', detected_issues=[], measured_features={'minimum_elbow_angle': np.float64(31.6), 'maximum_elbow_angle': np.float64(174.0), 'maximum_shoulder_deviation': 45.0, 'per_rep_min_elbow_angles': [np.float64(31.6), np.float64(37.1), np.float64(35.7), np.float64(36.0), np.float64(36.1), np.float64(33.7), np.float64(37.0), np.float64(37.7), np.float64(39.1), np.float64(37.8)], 'per_rep_max_elbow_angles': [np.float64(168.5), np.float64(174.0), np.float64(169.0), np.float64(169.8), np.float64(165.0), np.float64(164.6), np.float64(166.2), np.float64(163.6), np.float64(160.5), np.float64(163.7)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(124.74), 'processed_frames': 688, 'pose_detected_frames': 688}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(31.6), 'max_elbow_angle': np.float64(168.5), 'max_shoulder_deviation': 4.0, 'issues': []}, {'rep': 2, 'min_elbow_angle': np.float64(37.1), 'max_elbow_angle': np.float64(174.0), 'max_shoulder_deviation': 45.0, 'issues': []}, {'rep': 3, 'min_elbow_angle': np.float64(35.7), 'max_elbow_angle': np.float64(169.0), 'max_shoulder_deviation': 12.5, 'issues': []}, {'rep': 4, 'min_elbow_angle': np.float64(36.0), 'max_elbow_angle': np.float64(169.8), 'max_shoulder_deviation': 27.0, 'issues': []}, {'rep': 5, 'min_elbow_angle': np.float64(36.1), 'max_elbow_angle': np.float64(165.0), 'max_shoulder_deviation': 7.5, 'issues': []}, {'rep': 6, 'min_elbow_angle': np.float64(33.7), 'max_elbow_angle': np.float64(164.6), 'max_shoulder_deviation': 9.0, 'issues': []}, {'rep': 7, 'min_elbow_angle': np.float64(37.0), 'max_elbow_angle': np.float64(166.2), 'max_shoulder_deviation': 8.0, 'issues': []}, {'rep': 8, 'min_elbow_angle': np.float64(37.7), 'max_elbow_angle': np.float64(163.6), 'max_shoulder_deviation': 3.5, 'issues': []}, {'rep': 9, 'min_elbow_angle': np.float64(39.1), 'max_elbow_angle': np.float64(160.5), 'max_shoulder_deviation': 4.0, 'issues': []}, {'rep': 10, 'min_elbow_angle': np.float64(37.8), 'max_elbow_angle': np.float64(163.7), 'max_shoulder_deviation': 20.5, 'issues': []}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 20.5537
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "Based on the analysis, your form appears to be mostly correct.  You're showing good elbow angles and shoulder deviation.  However, there are some areas where you could improve.  \n\nFor example, you've shown some variation in elbow angles, and it's important to maintain a consistent range of motion throughout the exercise. \n\nRemember to focus on maintaining proper form and technique throughout the repetitions.",
+        "latency_seconds": 1.7168,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 124.74,\n    \"pose_detected_frames\": 688,\n    \"processed_frames\": 688,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [],\n  \"exercise\": \"bicep_curl\",\n  \"form_label\": \"correct\",\n  \"measured_features\": {\n    \"maximum_elbow_angle\": 174.0,\n    \"maximum_shoulder_deviation\": 45.0,\n    \"minimum_elbow_angle\": 31.6,\n    \"per_rep_max_elbow_angles\": [\n      168.5,\n      174.0,\n      169.0,\n      169.8,\n      165.0,\n      164.6,\n      166.2,\n      163.6,\n      160.5,\n      163.7\n    ],\n    \"per_rep_min_elbow_angles\": [\n      31.6,\n      37.1,\n      35.7,\n      36.0,\n      36.1,\n      33.7,\n      37.0,\n      37.7,\n      39.1,\n      37.8\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 168.5,\n      \"max_shoulder_deviation\": 4.0,\n      \"min_elbow_angle\": 31.6,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 174.0,\n      \"max_shoulder_deviation\": 45.0,\n      \"min_elbow_angle\": 37.1,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 169.0,\n      \"max_shoulder_deviation\": 12.5,\n      \"min_elbow_angle\": 35.7,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 169.8,\n      \"max_shoulder_deviation\": 27.0,\n      \"min_elbow_angle\": 36.0,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 165.0,\n      \"max_shoulder_deviation\": 7.5,\n      \"min_elbow_angle\": 36.1,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 164.6,\n      \"max_shoulder_deviation\": 9.0,\n      \"min_elbow_angle\": 33.7,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 166.2,\n      \"max_shoulder_deviation\": 8.0,\n      \"min_elbow_angle\": 37.0,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 163.6,\n      \"max_shoulder_deviation\": 3.5,\n      \"min_elbow_angle\": 37.7,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 160.5,\n      \"max_shoulder_deviation\": 4.0,\n      \"min_elbow_angle\": 39.1,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [],\n      \"max_elbow_angle\": 163.7,\n      \"max_shoulder_deviation\": 20.5,\n      \"min_elbow_angle\": 37.8,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"cooldown_frames\": 8,\n    \"elbow_down_trigger\": 125,\n    \"elbow_up_trigger\": 115,\n    \"half_rep_threshold\": 55,\n    \"stable_frames_required\": 4\n  }\n}\n\nUser question: Did I do the curls correctly?\n\nAnswer:"
+      }
+    }
+  },
+  "D": {
+    "video_path": "./dataset\\raw\\bicep_curl\\half_range\\side\\participant03_bicep_curl_half_range_side_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {
+            "half_range_of_motion": 10
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 99.0,
+              "max_elbow_angle": 138.3,
+              "max_shoulder_deviation": 3.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 2,
+              "min_elbow_angle": 80.6,
+              "max_elbow_angle": 160.8,
+              "max_shoulder_deviation": 8.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 3,
+              "min_elbow_angle": 79.4,
+              "max_elbow_angle": 164.0,
+              "max_shoulder_deviation": 10.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 4,
+              "min_elbow_angle": 76.4,
+              "max_elbow_angle": 161.0,
+              "max_shoulder_deviation": 16.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 5,
+              "min_elbow_angle": 83.9,
+              "max_elbow_angle": 161.3,
+              "max_shoulder_deviation": 10.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 6,
+              "min_elbow_angle": 76.9,
+              "max_elbow_angle": 159.3,
+              "max_shoulder_deviation": 6.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 7,
+              "min_elbow_angle": 82.7,
+              "max_elbow_angle": 156.8,
+              "max_shoulder_deviation": 5.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 8,
+              "min_elbow_angle": 77.8,
+              "max_elbow_angle": 162.2,
+              "max_shoulder_deviation": 8.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 9,
+              "min_elbow_angle": 81.4,
+              "max_elbow_angle": 164.5,
+              "max_shoulder_deviation": 15.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 10,
+              "min_elbow_angle": 82.2,
+              "max_elbow_angle": 158.8,
+              "max_shoulder_deviation": 6.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            }
+          ],
+          "predicted_form_label": "half_range",
+          "form_label_reason": "majority_of_detected_reps_above_curl_depth_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 77.06,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=10, form_label='half_range', detected_issues=['half_range_of_motion'], measured_features={'minimum_elbow_angle': np.float64(76.4), 'maximum_elbow_angle': np.float64(164.5), 'maximum_shoulder_deviation': 16.0, 'per_rep_min_elbow_angles': [np.float64(99.0), np.float64(80.6), np.float64(79.4), np.float64(76.4), np.float64(83.9), np.float64(76.9), np.float64(82.7), np.float64(77.8), np.float64(81.4), np.float64(82.2)], 'per_rep_max_elbow_angles': [np.float64(138.3), np.float64(160.8), np.float64(164.0), np.float64(161.0), np.float64(161.3), np.float64(159.3), np.float64(156.8), np.float64(162.2), np.float64(164.5), np.float64(158.8)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(77.06), 'processed_frames': 531, 'pose_detected_frames': 531}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(99.0), 'max_elbow_angle': np.float64(138.3), 'max_shoulder_deviation': 3.0, 'issues': ['half_range_of_motion']}, {'rep': 2, 'min_elbow_angle': np.float64(80.6), 'max_elbow_angle': np.float64(160.8), 'max_shoulder_deviation': 8.5, 'issues': ['half_range_of_motion']}, {'rep': 3, 'min_elbow_angle': np.float64(79.4), 'max_elbow_angle': np.float64(164.0), 'max_shoulder_deviation': 10.0, 'issues': ['half_range_of_motion']}, {'rep': 4, 'min_elbow_angle': np.float64(76.4), 'max_elbow_angle': np.float64(161.0), 'max_shoulder_deviation': 16.0, 'issues': ['half_range_of_motion']}, {'rep': 5, 'min_elbow_angle': np.float64(83.9), 'max_elbow_angle': np.float64(161.3), 'max_shoulder_deviation': 10.0, 'issues': ['half_range_of_motion']}, {'rep': 6, 'min_elbow_angle': np.float64(76.9), 'max_elbow_angle': np.float64(159.3), 'max_shoulder_deviation': 6.0, 'issues': ['half_range_of_motion']}, {'rep': 7, 'min_elbow_angle': np.float64(82.7), 'max_elbow_angle': np.float64(156.8), 'max_shoulder_deviation': 5.5, 'issues': ['half_range_of_motion']}, {'rep': 8, 'min_elbow_angle': np.float64(77.8), 'max_elbow_angle': np.float64(162.2), 'max_shoulder_deviation': 8.0, 'issues': ['half_range_of_motion']}, {'rep': 9, 'min_elbow_angle': np.float64(81.4), 'max_elbow_angle': np.float64(164.5), 'max_shoulder_deviation': 15.5, 'issues': ['half_range_of_motion']}, {'rep': 10, 'min_elbow_angle': np.float64(82.2), 'max_elbow_angle': np.float64(158.8), 'max_shoulder_deviation': 6.0, 'issues': ['half_range_of_motion']}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 15.6796
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "The analysis detected that your elbow movement during the bicep curl was limited to half the typical range of motion. This means your elbow didn't reach the full range of motion during the exercise. \n\nRemember, proper form is important for maximizing the benefits of your workout and preventing injuries.",
+        "latency_seconds": 1.4765,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 77.06,\n    \"pose_detected_frames\": 531,\n    \"processed_frames\": 531,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [\n    \"half_range_of_motion\"\n  ],\n  \"exercise\": \"bicep_curl\",\n  \"form_label\": \"half_range\",\n  \"measured_features\": {\n    \"maximum_elbow_angle\": 164.5,\n    \"maximum_shoulder_deviation\": 16.0,\n    \"minimum_elbow_angle\": 76.4,\n    \"per_rep_max_elbow_angles\": [\n      138.3,\n      160.8,\n      164.0,\n      161.0,\n      161.3,\n      159.3,\n      156.8,\n      162.2,\n      164.5,\n      158.8\n    ],\n    \"per_rep_min_elbow_angles\": [\n      99.0,\n      80.6,\n      79.4,\n      76.4,\n      83.9,\n      76.9,\n      82.7,\n      77.8,\n      81.4,\n      82.2\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 138.3,\n      \"max_shoulder_deviation\": 3.0,\n      \"min_elbow_angle\": 99.0,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 160.8,\n      \"max_shoulder_deviation\": 8.5,\n      \"min_elbow_angle\": 80.6,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 164.0,\n      \"max_shoulder_deviation\": 10.0,\n      \"min_elbow_angle\": 79.4,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 161.0,\n      \"max_shoulder_deviation\": 16.0,\n      \"min_elbow_angle\": 76.4,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 161.3,\n      \"max_shoulder_deviation\": 10.0,\n      \"min_elbow_angle\": 83.9,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 159.3,\n      \"max_shoulder_deviation\": 6.0,\n      \"min_elbow_angle\": 76.9,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 156.8,\n      \"max_shoulder_deviation\": 5.5,\n      \"min_elbow_angle\": 82.7,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 162.2,\n      \"max_shoulder_deviation\": 8.0,\n      \"min_elbow_angle\": 77.8,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 164.5,\n      \"max_shoulder_deviation\": 15.5,\n      \"min_elbow_angle\": 81.4,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 158.8,\n      \"max_shoulder_deviation\": 6.0,\n      \"min_elbow_angle\": 82.2,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"cooldown_frames\": 8,\n    \"elbow_down_trigger\": 125,\n    \"elbow_up_trigger\": 115,\n    \"half_rep_threshold\": 55,\n    \"stable_frames_required\": 4\n  }\n}\n\nUser question: Why was my curl marked as half range?\n\nAnswer:"
+      }
+    }
+  },
+  "E": {
+    "video_path": "./dataset\\raw\\bicep_curl\\half_range\\front\\participant01_bicep_curl_half_range_front_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 1,
+          "issue_counts": {
+            "half_range_of_motion": 1
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 100.3,
+              "max_elbow_angle": 178.6,
+              "max_shoulder_deviation": 17.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            }
+          ],
+          "predicted_form_label": "half_range",
+          "form_label_reason": "majority_of_detected_reps_above_curl_depth_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 30.35,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=1, form_label='half_range', detected_issues=['half_range_of_motion'], measured_features={'minimum_elbow_angle': np.float64(100.3), 'maximum_elbow_angle': np.float64(178.6), 'maximum_shoulder_deviation': 17.5, 'per_rep_min_elbow_angles': [np.float64(100.3)], 'per_rep_max_elbow_angles': [np.float64(178.6)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(30.35), 'processed_frames': 511, 'pose_detected_frames': 511}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(100.3), 'max_elbow_angle': np.float64(178.6), 'max_shoulder_deviation': 17.5, 'issues': ['half_range_of_motion']}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 15.3134
+      },
+      "whisper_small": {
+        "status": "success",
+        "transcription": "How many reps did I complete?",
+        "latency_seconds": 4.6446,
+        "error": "",
+        "model": "whisper_small"
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "You completed 1 rep.",
+        "latency_seconds": 0.6618,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 30.35,\n    \"pose_detected_frames\": 511,\n    \"processed_frames\": 511,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [\n    \"half_range_of_motion\"\n  ],\n  \"exercise\": \"bicep_curl\",\n  \"form_label\": \"half_range\",\n  \"measured_features\": {\n    \"maximum_elbow_angle\": 178.6,\n    \"maximum_shoulder_deviation\": 17.5,\n    \"minimum_elbow_angle\": 100.3,\n    \"per_rep_max_elbow_angles\": [\n      178.6\n    ],\n    \"per_rep_min_elbow_angles\": [\n      100.3\n    ]\n  },\n  \"rep_count\": 1,\n  \"rep_history\": [\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 178.6,\n      \"max_shoulder_deviation\": 17.5,\n      \"min_elbow_angle\": 100.3,\n      \"rep\": 1\n    }\n  ],\n  \"thresholds\": {\n    \"cooldown_frames\": 8,\n    \"elbow_down_trigger\": 125,\n    \"elbow_up_trigger\": 115,\n    \"half_rep_threshold\": 55,\n    \"stable_frames_required\": 4\n  }\n}\n\nUser question: How many reps did I complete?\n\nAnswer:"
+      }
+    }
+  },
+  "E2": {
+    "video_path": "./dataset\\raw\\squat\\correct\\side\\participant01_squat_correct_side_set01.mp4",
+    "exercise": "squat",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {},
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_knee_angle": 67.0,
+              "issues": []
+            },
+            {
+              "rep": 2,
+              "min_knee_angle": 58.0,
+              "issues": []
+            },
+            {
+              "rep": 3,
+              "min_knee_angle": 61.9,
+              "issues": []
+            },
+            {
+              "rep": 4,
+              "min_knee_angle": 60.7,
+              "issues": []
+            },
+            {
+              "rep": 5,
+              "min_knee_angle": 60.3,
+              "issues": []
+            },
+            {
+              "rep": 6,
+              "min_knee_angle": 60.1,
+              "issues": []
+            },
+            {
+              "rep": 7,
+              "min_knee_angle": 60.3,
+              "issues": []
+            },
+            {
+              "rep": 8,
+              "min_knee_angle": 62.1,
+              "issues": []
+            },
+            {
+              "rep": 9,
+              "min_knee_angle": 56.3,
+              "issues": []
+            },
+            {
+              "rep": 10,
+              "min_knee_angle": 60.3,
+              "issues": []
+            }
+          ],
+          "predicted_form_label": "correct",
+          "form_label_reason": "majority_of_detected_reps_reached_depth_threshold",
+          "thresholds": {
+            "knee_bad_depth": 115,
+            "knee_down_trigger": 165,
+            "knee_up_trigger": 165,
+            "minimum_down_frames": 3
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 105.61,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='squat', rep_count=10, form_label='correct', detected_issues=[], measured_features={'minimum_knee_angle': np.float64(56.3), 'per_rep_min_knee_angles': [np.float64(67.0), np.float64(58.0), np.float64(61.9), np.float64(60.7), np.float64(60.3), np.float64(60.1), np.float64(60.3), np.float64(62.1), np.float64(56.3), np.float64(60.3)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(105.61), 'processed_frames': 802, 'pose_detected_frames': 802}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_knee_angle': np.float64(67.0), 'issues': []}, {'rep': 2, 'min_knee_angle': np.float64(58.0), 'issues': []}, {'rep': 3, 'min_knee_angle': np.float64(61.9), 'issues': []}, {'rep': 4, 'min_knee_angle': np.float64(60.7), 'issues': []}, {'rep': 5, 'min_knee_angle': np.float64(60.3), 'issues': []}, {'rep': 6, 'min_knee_angle': np.float64(60.1), 'issues': []}, {'rep': 7, 'min_knee_angle': np.float64(60.3), 'issues': []}, {'rep': 8, 'min_knee_angle': np.float64(62.1), 'issues': []}, {'rep': 9, 'min_knee_angle': np.float64(56.3), 'issues': []}, {'rep': 10, 'min_knee_angle': np.float64(60.3), 'issues': []}], thresholds={'knee_bad_depth': 115, 'knee_down_trigger': 165, 'knee_up_trigger': 165, 'minimum_down_frames': 3})",
+        "processing_time_seconds": 24.1547
+      },
+      "whisper_small": {
+        "status": "success",
+        "transcription": "How many reps did I complete?",
+        "latency_seconds": 1.7276,
+        "error": "",
+        "model": "whisper_small"
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "You completed 10 reps.",
+        "latency_seconds": 0.5232,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 105.61,\n    \"pose_detected_frames\": 802,\n    \"processed_frames\": 802,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [],\n  \"exercise\": \"squat\",\n  \"form_label\": \"correct\",\n  \"measured_features\": {\n    \"minimum_knee_angle\": 56.3,\n    \"per_rep_min_knee_angles\": [\n      67.0,\n      58.0,\n      61.9,\n      60.7,\n      60.3,\n      60.1,\n      60.3,\n      62.1,\n      56.3,\n      60.3\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 67.0,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 58.0,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 61.9,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.7,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.1,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 62.1,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 56.3,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [],\n      \"min_knee_angle\": 60.3,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"knee_bad_depth\": 115,\n    \"knee_down_trigger\": 165,\n    \"knee_up_trigger\": 165,\n    \"minimum_down_frames\": 3\n  }\n}\n\nUser question: How many reps did I complete?\n\nAnswer:"
+      }
+    }
+  },
+  "F": {
+    "video_path": "./dataset\\raw\\squat\\shallow\\front\\participant04_squat_shallow_front_set01.mp4",
+    "exercise": "squat",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 0,
+          "issue_counts": {},
+          "rep_history": [],
+          "predicted_form_label": "unknown",
+          "form_label_reason": "no_complete_squat_reps_detected",
+          "thresholds": {
+            "knee_bad_depth": 115,
+            "knee_down_trigger": 165,
+            "knee_up_trigger": 165,
+            "minimum_down_frames": 3
+          }
+        },
+        "confidence": {
+          "confidence_status": "LOW",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 6.6,
+          "reason_codes": [
+            "NO_REPS_DETECTED",
+            "INSUFFICIENT_MOVEMENT_SIGNAL"
+          ],
+          "user_message": "Analysis confidence is low because no valid repetitions were detected. Please record again with the full movement visible."
+        },
+        "structured_result": "StructuredMovementResult(exercise='squat', rep_count=0, form_label='unknown', detected_issues=[], measured_features={'minimum_knee_angle': None, 'per_rep_min_knee_angles': []}, confidence_status='LOW', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(6.6), 'processed_frames': 811, 'pose_detected_frames': 811}, confidence_reasons=['NO_REPS_DETECTED', 'INSUFFICIENT_MOVEMENT_SIGNAL'], confidence_message='Analysis confidence is low because no valid repetitions were detected. Please record again with the full movement visible.', rep_history=[], thresholds={'knee_bad_depth': 115, 'knee_down_trigger': 165, 'knee_up_trigger': 165, 'minimum_down_frames': 3})",
+        "processing_time_seconds": 22.5308
+      },
+      "gemma2b": {
+        "status": "blocked",
+        "reason": "LOW_CONFIDENCE",
+        "llm_called": false
+      }
+    }
+  },
+  "G": {
+    "video_path": "./dataset\\raw\\bicep_curl\\correct\\side\\participant01_bicep_curl_correct_side_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {
+            "half_range_of_motion": 10
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 56.8,
+              "max_elbow_angle": 163.2,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 2,
+              "min_elbow_angle": 58.8,
+              "max_elbow_angle": 149.2,
+              "max_shoulder_deviation": 13.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 3,
+              "min_elbow_angle": 55.2,
+              "max_elbow_angle": 155.1,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 4,
+              "min_elbow_angle": 64.7,
+              "max_elbow_angle": 149.5,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 5,
+              "min_elbow_angle": 67.3,
+              "max_elbow_angle": 153.4,
+              "max_shoulder_deviation": 4.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 6,
+              "min_elbow_angle": 60.6,
+              "max_elbow_angle": 150.4,
+              "max_shoulder_deviation": 6.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 7,
+              "min_elbow_angle": 66.9,
+              "max_elbow_angle": 140.1,
+              "max_shoulder_deviation": 7.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 8,
+              "min_elbow_angle": 71.1,
+              "max_elbow_angle": 147.8,
+              "max_shoulder_deviation": 7.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 9,
+              "min_elbow_angle": 74.1,
+              "max_elbow_angle": 151.1,
+              "max_shoulder_deviation": 11.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 10,
+              "min_elbow_angle": 73.2,
+              "max_elbow_angle": 152.2,
+              "max_shoulder_deviation": 5.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            }
+          ],
+          "predicted_form_label": "half_range",
+          "form_label_reason": "majority_of_detected_reps_above_curl_depth_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 84.24,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=10, form_label='half_range', detected_issues=['half_range_of_motion'], measured_features={'minimum_elbow_angle': np.float64(55.2), 'maximum_elbow_angle': np.float64(163.2), 'maximum_shoulder_deviation': 13.5, 'per_rep_min_elbow_angles': [np.float64(56.8), np.float64(58.8), np.float64(55.2), np.float64(64.7), np.float64(67.3), np.float64(60.6), np.float64(66.9), np.float64(71.1), np.float64(74.1), np.float64(73.2)], 'per_rep_max_elbow_angles': [np.float64(163.2), np.float64(149.2), np.float64(155.1), np.float64(149.5), np.float64(153.4), np.float64(150.4), np.float64(140.1), np.float64(147.8), np.float64(151.1), np.float64(152.2)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(84.24), 'processed_frames': 604, 'pose_detected_frames': 604}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(56.8), 'max_elbow_angle': np.float64(163.2), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 2, 'min_elbow_angle': np.float64(58.8), 'max_elbow_angle': np.float64(149.2), 'max_shoulder_deviation': 13.5, 'issues': ['half_range_of_motion']}, {'rep': 3, 'min_elbow_angle': np.float64(55.2), 'max_elbow_angle': np.float64(155.1), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 4, 'min_elbow_angle': np.float64(64.7), 'max_elbow_angle': np.float64(149.5), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 5, 'min_elbow_angle': np.float64(67.3), 'max_elbow_angle': np.float64(153.4), 'max_shoulder_deviation': 4.5, 'issues': ['half_range_of_motion']}, {'rep': 6, 'min_elbow_angle': np.float64(60.6), 'max_elbow_angle': np.float64(150.4), 'max_shoulder_deviation': 6.0, 'issues': ['half_range_of_motion']}, {'rep': 7, 'min_elbow_angle': np.float64(66.9), 'max_elbow_angle': np.float64(140.1), 'max_shoulder_deviation': 7.5, 'issues': ['half_range_of_motion']}, {'rep': 8, 'min_elbow_angle': np.float64(71.1), 'max_elbow_angle': np.float64(147.8), 'max_shoulder_deviation': 7.5, 'issues': ['half_range_of_motion']}, {'rep': 9, 'min_elbow_angle': np.float64(74.1), 'max_elbow_angle': np.float64(151.1), 'max_shoulder_deviation': 11.0, 'issues': ['half_range_of_motion']}, {'rep': 10, 'min_elbow_angle': np.float64(73.2), 'max_elbow_angle': np.float64(152.2), 'max_shoulder_deviation': 5.0, 'issues': ['half_range_of_motion']}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 18.2197
+      },
+      "whisper_small": {
+        "status": "failed",
+        "transcription": "",
+        "latency_seconds": 0.0,
+        "error": "Audio file is missing or empty: [temporary local path excluded]\\tmpxfhcltxv.wav",
+        "model": "whisper_small"
+      }
+    }
+  },
+  "H": {
+    "video_path": "./dataset\\raw\\bicep_curl\\correct\\side\\participant01_bicep_curl_correct_side_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 10,
+          "issue_counts": {
+            "half_range_of_motion": 10
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 56.8,
+              "max_elbow_angle": 163.2,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 2,
+              "min_elbow_angle": 58.8,
+              "max_elbow_angle": 149.2,
+              "max_shoulder_deviation": 13.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 3,
+              "min_elbow_angle": 55.2,
+              "max_elbow_angle": 155.1,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 4,
+              "min_elbow_angle": 64.7,
+              "max_elbow_angle": 149.5,
+              "max_shoulder_deviation": 3.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 5,
+              "min_elbow_angle": 67.3,
+              "max_elbow_angle": 153.4,
+              "max_shoulder_deviation": 4.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 6,
+              "min_elbow_angle": 60.6,
+              "max_elbow_angle": 150.4,
+              "max_shoulder_deviation": 6.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 7,
+              "min_elbow_angle": 66.9,
+              "max_elbow_angle": 140.1,
+              "max_shoulder_deviation": 7.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 8,
+              "min_elbow_angle": 71.1,
+              "max_elbow_angle": 147.8,
+              "max_shoulder_deviation": 7.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 9,
+              "min_elbow_angle": 74.1,
+              "max_elbow_angle": 151.1,
+              "max_shoulder_deviation": 11.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            },
+            {
+              "rep": 10,
+              "min_elbow_angle": 73.2,
+              "max_elbow_angle": 152.2,
+              "max_shoulder_deviation": 5.0,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            }
+          ],
+          "predicted_form_label": "half_range",
+          "form_label_reason": "majority_of_detected_reps_above_curl_depth_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 84.24,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=10, form_label='half_range', detected_issues=['half_range_of_motion'], measured_features={'minimum_elbow_angle': np.float64(55.2), 'maximum_elbow_angle': np.float64(163.2), 'maximum_shoulder_deviation': 13.5, 'per_rep_min_elbow_angles': [np.float64(56.8), np.float64(58.8), np.float64(55.2), np.float64(64.7), np.float64(67.3), np.float64(60.6), np.float64(66.9), np.float64(71.1), np.float64(74.1), np.float64(73.2)], 'per_rep_max_elbow_angles': [np.float64(163.2), np.float64(149.2), np.float64(155.1), np.float64(149.5), np.float64(153.4), np.float64(150.4), np.float64(140.1), np.float64(147.8), np.float64(151.1), np.float64(152.2)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(84.24), 'processed_frames': 604, 'pose_detected_frames': 604}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(56.8), 'max_elbow_angle': np.float64(163.2), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 2, 'min_elbow_angle': np.float64(58.8), 'max_elbow_angle': np.float64(149.2), 'max_shoulder_deviation': 13.5, 'issues': ['half_range_of_motion']}, {'rep': 3, 'min_elbow_angle': np.float64(55.2), 'max_elbow_angle': np.float64(155.1), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 4, 'min_elbow_angle': np.float64(64.7), 'max_elbow_angle': np.float64(149.5), 'max_shoulder_deviation': 3.5, 'issues': ['half_range_of_motion']}, {'rep': 5, 'min_elbow_angle': np.float64(67.3), 'max_elbow_angle': np.float64(153.4), 'max_shoulder_deviation': 4.5, 'issues': ['half_range_of_motion']}, {'rep': 6, 'min_elbow_angle': np.float64(60.6), 'max_elbow_angle': np.float64(150.4), 'max_shoulder_deviation': 6.0, 'issues': ['half_range_of_motion']}, {'rep': 7, 'min_elbow_angle': np.float64(66.9), 'max_elbow_angle': np.float64(140.1), 'max_shoulder_deviation': 7.5, 'issues': ['half_range_of_motion']}, {'rep': 8, 'min_elbow_angle': np.float64(71.1), 'max_elbow_angle': np.float64(147.8), 'max_shoulder_deviation': 7.5, 'issues': ['half_range_of_motion']}, {'rep': 9, 'min_elbow_angle': np.float64(74.1), 'max_elbow_angle': np.float64(151.1), 'max_shoulder_deviation': 11.0, 'issues': ['half_range_of_motion']}, {'rep': 10, 'min_elbow_angle': np.float64(73.2), 'max_elbow_angle': np.float64(152.2), 'max_shoulder_deviation': 5.0, 'issues': ['half_range_of_motion']}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 18.1789
+      },
+      "gemma2b": {
+        "status": "failed",
+        "response": "",
+        "latency_seconds": 0.0149,
+        "error": "Ollama/Gemma request failed: HTTP Error 404: Not Found",
+        "model": "missing-gemma-model-for-test",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 84.24,\n    \"pose_detected_frames\": 604,\n    \"processed_frames\": 604,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [\n    \"half_range_of_motion\"\n  ],\n  \"exercise\": \"bicep_curl\",\n  \"form_label\": \"half_range\",\n  \"measured_features\": {\n    \"maximum_elbow_angle\": 163.2,\n    \"maximum_shoulder_deviation\": 13.5,\n    \"minimum_elbow_angle\": 55.2,\n    \"per_rep_max_elbow_angles\": [\n      163.2,\n      149.2,\n      155.1,\n      149.5,\n      153.4,\n      150.4,\n      140.1,\n      147.8,\n      151.1,\n      152.2\n    ],\n    \"per_rep_min_elbow_angles\": [\n      56.8,\n      58.8,\n      55.2,\n      64.7,\n      67.3,\n      60.6,\n      66.9,\n      71.1,\n      74.1,\n      73.2\n    ]\n  },\n  \"rep_count\": 10,\n  \"rep_history\": [\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 163.2,\n      \"max_shoulder_deviation\": 3.5,\n      \"min_elbow_angle\": 56.8,\n      \"rep\": 1\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 149.2,\n      \"max_shoulder_deviation\": 13.5,\n      \"min_elbow_angle\": 58.8,\n      \"rep\": 2\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 155.1,\n      \"max_shoulder_deviation\": 3.5,\n      \"min_elbow_angle\": 55.2,\n      \"rep\": 3\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 149.5,\n      \"max_shoulder_deviation\": 3.5,\n      \"min_elbow_angle\": 64.7,\n      \"rep\": 4\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 153.4,\n      \"max_shoulder_deviation\": 4.5,\n      \"min_elbow_angle\": 67.3,\n      \"rep\": 5\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 150.4,\n      \"max_shoulder_deviation\": 6.0,\n      \"min_elbow_angle\": 60.6,\n      \"rep\": 6\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 140.1,\n      \"max_shoulder_deviation\": 7.5,\n      \"min_elbow_angle\": 66.9,\n      \"rep\": 7\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 147.8,\n      \"max_shoulder_deviation\": 7.5,\n      \"min_elbow_angle\": 71.1,\n      \"rep\": 8\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 151.1,\n      \"max_shoulder_deviation\": 11.0,\n      \"min_elbow_angle\": 74.1,\n      \"rep\": 9\n    },\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 152.2,\n      \"max_shoulder_deviation\": 5.0,\n      \"min_elbow_angle\": 73.2,\n      \"rep\": 10\n    }\n  ],\n  \"thresholds\": {\n    \"cooldown_frames\": 8,\n    \"elbow_down_trigger\": 125,\n    \"elbow_up_trigger\": 115,\n    \"half_rep_threshold\": 55,\n    \"stable_frames_required\": 4\n  }\n}\n\nUser question: Give me concise coaching feedback.\n\nAnswer:"
+      }
+    }
+  },
+  "I": {
+    "video_path": "./dataset\\raw\\bicep_curl\\half_range\\front\\participant01_bicep_curl_half_range_front_set01.mp4",
+    "exercise": "bicep_curl",
+    "stage_outputs": {
+      "video_pose_movement_confidence": {
+        "status": "success",
+        "summary": {
+          "total_reps": 1,
+          "issue_counts": {
+            "half_range_of_motion": 1
+          },
+          "rep_history": [
+            {
+              "rep": 1,
+              "min_elbow_angle": 100.3,
+              "max_elbow_angle": 178.6,
+              "max_shoulder_deviation": 17.5,
+              "issues": [
+                "half_range_of_motion"
+              ]
+            }
+          ],
+          "predicted_form_label": "half_range",
+          "form_label_reason": "majority_of_detected_reps_above_curl_depth_threshold",
+          "thresholds": {
+            "elbow_down_trigger": 125,
+            "elbow_up_trigger": 115,
+            "half_rep_threshold": 55,
+            "stable_frames_required": 4,
+            "cooldown_frames": 8
+          }
+        },
+        "confidence": {
+          "confidence_status": "HIGH",
+          "usable_frame_rate": 1.0,
+          "required_joint_availability": 1.0,
+          "angle_calculability_rate": 1.0,
+          "dropout_rate": 0.0,
+          "movement_signal_range": 30.35,
+          "reason_codes": [],
+          "user_message": "Analysis confidence is high. Repetition count and form feedback can be shown."
+        },
+        "structured_result": "StructuredMovementResult(exercise='bicep_curl', rep_count=1, form_label='half_range', detected_issues=['half_range_of_motion'], measured_features={'minimum_elbow_angle': np.float64(100.3), 'maximum_elbow_angle': np.float64(178.6), 'maximum_shoulder_deviation': 17.5, 'per_rep_min_elbow_angles': [np.float64(100.3)], 'per_rep_max_elbow_angles': [np.float64(178.6)]}, confidence_status='HIGH', confidence_metrics={'usable_frame_rate': 1.0, 'required_joint_availability': 1.0, 'angle_calculability_rate': 1.0, 'dropout_rate': 0.0, 'movement_signal_range': np.float64(30.35), 'processed_frames': 511, 'pose_detected_frames': 511}, confidence_reasons=[], confidence_message='Analysis confidence is high. Repetition count and form feedback can be shown.', rep_history=[{'rep': 1, 'min_elbow_angle': np.float64(100.3), 'max_elbow_angle': np.float64(178.6), 'max_shoulder_deviation': 17.5, 'issues': ['half_range_of_motion']}], thresholds={'elbow_down_trigger': 125, 'elbow_up_trigger': 115, 'half_rep_threshold': 55, 'stable_frames_required': 4, 'cooldown_frames': 8})",
+        "processing_time_seconds": 15.1634
+      },
+      "whisper_small": {
+        "status": "success",
+        "transcription": "Why was Michael market as",
+        "latency_seconds": 1.6811,
+        "error": "",
+        "model": "whisper_small"
+      },
+      "gemma2b": {
+        "status": "success",
+        "response": "The system detected that Michael's bicep curls had a \"half_range_of_motion\" issue. This means his elbow didn't reach the full range of motion during the exercise. \n\nTo improve, focus on maintaining a full range of motion throughout the exercise.",
+        "latency_seconds": 1.0842,
+        "error": "",
+        "model": "gemma2:2b",
+        "prompt": "You are the language component of an AI fitness-coaching prototype.\n\nYou must use only the supplied movement-analysis facts. Do not claim that you saw the video, image, body, or movement directly.\n\nYour job is to explain the structured facts in clear beginner-friendly language and answer the user's question.\n\nRules:\n- Clearly distinguish measured facts from general coaching advice.\n- Do not invent additional exercise issues.\n- Do not contradict the supplied form label, repetition count, confidence status, or detected issues.\n- If a detail is not supplied, say that the system did not measure it.\n- Avoid medical diagnosis, injury-treatment advice, pain-cause claims, or rehabilitation guidance.\n- If the user asks about pain, injury, dizziness, or medical safety, explain that the prototype cannot assess medical issues and recommend a qualified professional.\n- Keep the answer concise, supportive, and practical.\n- Never say \"I can see\", \"from your video\", or similar phrases implying direct video inspection.\n\n\nStructured movement-analysis facts:\n{\n  \"confidence_message\": \"Analysis confidence is high. Repetition count and form feedback can be shown.\",\n  \"confidence_metrics\": {\n    \"angle_calculability_rate\": 1.0,\n    \"dropout_rate\": 0.0,\n    \"movement_signal_range\": 30.35,\n    \"pose_detected_frames\": 511,\n    \"processed_frames\": 511,\n    \"required_joint_availability\": 1.0,\n    \"usable_frame_rate\": 1.0\n  },\n  \"confidence_reasons\": [],\n  \"confidence_status\": \"HIGH\",\n  \"detected_issues\": [\n    \"half_range_of_motion\"\n  ],\n  \"exercise\": \"bicep_curl\",\n  \"form_label\": \"half_range\",\n  \"measured_features\": {\n    \"maximum_elbow_angle\": 178.6,\n    \"maximum_shoulder_deviation\": 17.5,\n    \"minimum_elbow_angle\": 100.3,\n    \"per_rep_max_elbow_angles\": [\n      178.6\n    ],\n    \"per_rep_min_elbow_angles\": [\n      100.3\n    ]\n  },\n  \"rep_count\": 1,\n  \"rep_history\": [\n    {\n      \"issues\": [\n        \"half_range_of_motion\"\n      ],\n      \"max_elbow_angle\": 178.6,\n      \"max_shoulder_deviation\": 17.5,\n      \"min_elbow_angle\": 100.3,\n      \"rep\": 1\n    }\n  ],\n  \"thresholds\": {\n    \"cooldown_frames\": 8,\n    \"elbow_down_trigger\": 125,\n    \"elbow_up_trigger\": 115,\n    \"half_rep_threshold\": 55,\n    \"stable_frames_required\": 4\n  }\n}\n\nUser question: Why was Michael market as\n\nAnswer:"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+fold,participant_id,role,raw_video_count,rep_clip_count,class_distribution,leakage_check
+fold1,participant01,test,7,51,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold1,participant02,development,7,65,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold1,participant03,development,7,61,bicep_curl/correct=2; bicep_curl/half_range=2; squat/correct=3,pass
+fold1,participant04,development,2,10,squat/shallow=2,pass
+fold2,participant01,development,7,51,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold2,participant02,test,7,65,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold2,participant03,development,7,61,bicep_curl/correct=2; bicep_curl/half_range=2; squat/correct=3,pass
+fold2,participant04,development,2,10,squat/shallow=2,pass
+fold3,participant01,development,7,51,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold3,participant02,development,7,65,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold3,participant03,test,7,61,bicep_curl/correct=2; bicep_curl/half_range=2; squat/correct=3,pass
+fold3,participant04,development,2,10,squat/shallow=2,pass
+fold4,participant01,development,7,51,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold4,participant02,development,7,65,bicep_curl/correct=3; bicep_curl/half_range=2; squat/correct=2,pass
+fold4,participant03,development,7,61,bicep_curl/correct=2; bicep_curl/half_range=2; squat/correct=3,pass
+fold4,participant04,test,2,10,squat/shallow=2,pass

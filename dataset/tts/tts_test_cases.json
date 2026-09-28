@@ -1,0 +1,42 @@
+[
+  {
+    "case_id": "tts_001",
+    "category": "rep_count",
+    "text": "You completed 10 reps."
+  },
+  {
+    "case_id": "tts_002",
+    "category": "correct_squat",
+    "text": "Your squat set was counted as 10 repetitions with correct form. Keep the movement controlled and keep the full body visible."
+  },
+  {
+    "case_id": "tts_003",
+    "category": "shallow_squat",
+    "text": "Your squat was marked as shallow because the detected knee bend did not reach the required depth. Try lowering slightly more while keeping control."
+  },
+  {
+    "case_id": "tts_004",
+    "category": "correct_curl",
+    "text": "Your bicep curls were counted with full range of motion. Keep your upper arm steady and avoid swinging your shoulder."
+  },
+  {
+    "case_id": "tts_005",
+    "category": "half_range_curl",
+    "text": "Your curl was marked as half range because the elbow did not bend enough at the top of the repetition."
+  },
+  {
+    "case_id": "tts_006",
+    "category": "improvement_guidance",
+    "text": "Focus on moving through the full range of motion and pausing briefly between repetitions so the system can separate each rep clearly."
+  },
+  {
+    "case_id": "tts_007",
+    "category": "confidence_guidance",
+    "text": "Analysis confidence is low because no valid repetitions were detected. Please record again with the full movement visible."
+  },
+  {
+    "case_id": "tts_008",
+    "category": "longer_response",
+    "text": "You completed 10 reps and the set was classified as correct. The movement evidence was reliable enough for coaching feedback, but you should still use this as basic form guidance rather than medical or injury advice."
+  }
+]

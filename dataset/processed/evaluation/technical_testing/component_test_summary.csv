@@ -1,0 +1,14 @@
+component,status,count
+automated_tests,PASS,1
+bicep_ready_option,PASS,2
+confidence_gate,PASS,5
+form_classification,PASS,4
+gemma2b,PASS,7
+movement_analysis,PASS,5
+orchestration,PASS,6
+pose_model,PASS,4
+streamlit_session,PASS,11
+structured_result,PASS,5
+video_input,PASS,5
+whisper_small,PASS,4
+windows_sapi_tts,PASS,5

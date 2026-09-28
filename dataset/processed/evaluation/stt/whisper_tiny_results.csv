@@ -1,0 +1,25 @@
+model_name,library_version,device,audio_id,category,reference_text,predicted_text,wer,exact_match,failed_or_empty,latency_seconds,audio_duration_seconds,real_time_factor,audio_path
+whisper_tiny,20250625,cpu,stt_001,form question,Why was my squat marked as shallow?,Why was my squat market at shallow?,0.2857,False,False,0.6918,5.0,0.1384,dataset/stt/audio/stt_001.wav
+whisper_tiny,20250625,cpu,stt_002,repetition question,How many reps did I complete?,How many reps did I complete?,0.0,True,False,0.3225,5.0,0.0645,dataset/stt/audio/stt_002.wav
+whisper_tiny,20250625,cpu,stt_003,improvement question,How can I improve my curl?,I can improve my current,0.5,False,False,0.2983,5.0,0.0597,dataset/stt/audio/stt_003.wav
+whisper_tiny,20250625,cpu,stt_004,form question,Were my squats deep enough?,Wear my squads deep enough,0.4,False,False,0.2917,5.0,0.0583,dataset/stt/audio/stt_004.wav
+whisper_tiny,20250625,cpu,stt_005,form question,Why was my curl marked as half range?,Why was my current market as happy?,0.5,False,False,0.3334,5.0,0.0667,dataset/stt/audio/stt_005.wav
+whisper_tiny,20250625,cpu,stt_006,repetition question,How many good reps did I do?,Many good reps that I do.,0.2857,False,False,0.3272,5.0,0.0654,dataset/stt/audio/stt_006.wav
+whisper_tiny,20250625,cpu,stt_007,form question,Was my form correct?,Was my form correct?,0.0,True,False,0.2971,5.0,0.0594,dataset/stt/audio/stt_007.wav
+whisper_tiny,20250625,cpu,stt_008,improvement question,What should I improve next time?,What should I improve next time?,0.0,True,False,0.3759,5.0,0.0752,dataset/stt/audio/stt_008.wav
+whisper_tiny,20250625,cpu,stt_009,confidence question,Why is the analysis confidence low?,Why is the analysis confident slow?,0.3333,False,False,0.3354,5.0,0.0671,dataset/stt/audio/stt_009.wav
+whisper_tiny,20250625,cpu,stt_010,confidence question,Should I record the video again?,Thank you for watching!,1.0,False,False,0.3273,5.0,0.0655,dataset/stt/audio/stt_010.wav
+whisper_tiny,20250625,cpu,stt_011,confidence question,Which body part was not visible?,Which body part was not visible?,0.0,True,False,0.4441,5.0,0.0888,dataset/stt/audio/stt_011.wav
+whisper_tiny,20250625,cpu,stt_012,form question,Did I complete the full range of motion?,"They can't wait, the full range of motion.",0.5,False,False,0.5091,5.0,0.1018,dataset/stt/audio/stt_012.wav
+whisper_tiny,20250625,cpu,stt_013,improvement question,How do I make my squat deeper?,How do I make my squats deeper?,0.1429,False,False,0.4167,5.0,0.0833,dataset/stt/audio/stt_013.wav
+whisper_tiny,20250625,cpu,stt_014,improvement question,How do I avoid swinging during curls?,Do I avoid swagging during curse?,0.4286,False,False,0.437,5.0,0.0874,dataset/stt/audio/stt_014.wav
+whisper_tiny,20250625,cpu,stt_015,repetition question,How many shallow reps did I do?,How many shadow reps did I do?,0.1429,False,False,0.4422,5.0,0.0884,dataset/stt/audio/stt_015.wav
+whisper_tiny,20250625,cpu,stt_016,repetition question,How many half range curls did I do?,How many half range curled did I do?,0.125,False,False,0.446,5.0,0.0892,dataset/stt/audio/stt_016.wav
+whisper_tiny,20250625,cpu,stt_017,confidence question,Was the camera angle good enough?,"Whoa, Zekamira angle good enough.",0.5,False,False,0.4482,5.0,0.0896,dataset/stt/audio/stt_017.wav
+whisper_tiny,20250625,cpu,stt_018,repetition question,Why did the system not count my reps?,Why did the system not count my reps?,0.0,True,False,0.47,5.0,0.094,dataset/stt/audio/stt_018.wav
+whisper_tiny,20250625,cpu,stt_019,confidence question,Can I trust this feedback?,And I trust this feedback.,0.2,False,False,0.4109,5.0,0.0822,dataset/stt/audio/stt_019.wav
+whisper_tiny,20250625,cpu,stt_020,confidence question,What does low confidence mean?,But does low confidence mean?,0.2,False,False,0.396,5.0,0.0792,dataset/stt/audio/stt_020.wav
+whisper_tiny,20250625,cpu,stt_021,form question,Did my knees bend enough in the squat?,Did my knees bend enough in this squat?,0.125,False,False,0.4511,5.0,0.0902,dataset/stt/audio/stt_021.wav
+whisper_tiny,20250625,cpu,stt_022,form question,Did my elbows bend enough in the curl?,"LPU, bend the enough in this curl.",0.625,False,False,0.4569,5.0,0.0914,dataset/stt/audio/stt_022.wav
+whisper_tiny,20250625,cpu,stt_023,improvement question,What should I fix before my next set?,Watch the day fix before my next set.,0.375,False,False,0.4309,5.0,0.0862,dataset/stt/audio/stt_023.wav
+whisper_tiny,20250625,cpu,stt_024,improvement question,Can you explain my results simply?,And you explain my results simply,0.1667,False,False,0.397,5.0,0.0794,dataset/stt/audio/stt_024.wav

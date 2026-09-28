@@ -1,0 +1,103 @@
+{
+  "environment": {
+    "date": "2026-09-26",
+    "python_version": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "operating_system": "Windows-10-10.0.26200-SP0",
+    "streamlit_version": "1.58.0",
+    "mediapipe_version": "0.10.9",
+    "whisper_package_version": "20250625",
+    "whisper_model": "small",
+    "ollama_version": "0.34.4",
+    "ollama_gemma2_2b_ready": true,
+    "ollama_models": [
+      "gemma2:2b",
+      "llama3.2:3b",
+      "mistral:7b-instruct"
+    ],
+    "gemma_model_tag": "gemma2:2b",
+    "tts_engine": "Windows SAPI",
+    "cpu": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "counts": {
+    "total": 64,
+    "passed": 64,
+    "failed": 0,
+    "blocked_or_not_run": 0
+  },
+  "component_summary": [
+    {
+      "component": "automated_tests",
+      "status": "PASS",
+      "count": 1
+    },
+    {
+      "component": "bicep_ready_option",
+      "status": "PASS",
+      "count": 2
+    },
+    {
+      "component": "confidence_gate",
+      "status": "PASS",
+      "count": 5
+    },
+    {
+      "component": "form_classification",
+      "status": "PASS",
+      "count": 4
+    },
+    {
+      "component": "gemma2b",
+      "status": "PASS",
+      "count": 7
+    },
+    {
+      "component": "movement_analysis",
+      "status": "PASS",
+      "count": 5
+    },
+    {
+      "component": "orchestration",
+      "status": "PASS",
+      "count": 6
+    },
+    {
+      "component": "pose_model",
+      "status": "PASS",
+      "count": 4
+    },
+    {
+      "component": "streamlit_session",
+      "status": "PASS",
+      "count": 11
+    },
+    {
+      "component": "structured_result",
+      "status": "PASS",
+      "count": 5
+    },
+    {
+      "component": "video_input",
+      "status": "PASS",
+      "count": 5
+    },
+    {
+      "component": "whisper_small",
+      "status": "PASS",
+      "count": 4
+    },
+    {
+      "component": "windows_sapi_tts",
+      "status": "PASS",
+      "count": 5
+    }
+  ],
+  "output_files": {
+    "technical_test_results": "./dataset\\processed\\evaluation\\technical_testing\\technical_test_results.csv",
+    "technical_test_summary": "./dataset\\processed\\evaluation\\technical_testing\\technical_test_summary.json",
+    "technical_failure_matrix": "./dataset\\processed\\evaluation\\technical_testing\\technical_failure_matrix.csv",
+    "component_test_summary": "./dataset\\processed\\evaluation\\technical_testing\\component_test_summary.csv",
+    "integration_test_results": "./dataset\\processed\\evaluation\\technical_testing\\integration_test_results.csv",
+    "human_readable_results": "./docs\\TECHNICAL_TEST_RESULTS.md"
+  }
+}

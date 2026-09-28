@@ -1,0 +1,13 @@
+failure,expected_behaviour,observed_behaviour,status,evidence,notes
+missing video,Graceful rejection; no analysis crash.,Please upload a video before analysing.,PASS,./dataset\processed\evaluation\technical_testing\missing_phase11_video.mp4,
+unreadable video,Reject unreadable file; no fabricated result.,Your video could not be opened. Please try another recording.,PASS,./dataset\processed\evaluation\technical_testing\tmpn_h2tbub.mp4,
+no pose / insufficient evidence,No crash; no confident fabricated pose.,landmarks=0,PASS,synthetic blank frame,
+zero repetitions,0 reps remain traceable and do not become confident normal coaching.,"{'rep_count': 0, 'form_label': 'unknown', 'confidence_status': 'LOW'}",PASS,./dataset\raw\squat\shallow\front\participant04_squat_shallow_front_set01.mp4,
+LOW confidence,Block confident coaching and return re-record guidance.,"{'status': 'LOW', 'reasons': ['NO_REPS_DETECTED', 'INSUFFICIENT_MOVEMENT_SIGNAL']}",PASS,./dataset\raw\squat\shallow\front\participant04_squat_shallow_front_set01.mp4,
+insufficient movement evidence,Gemma normal coaching is blocked before it can amplify weak evidence.,Analysis confidence is low because no valid repetitions were detected. Please record again with the full movement visible. The system should not give confident form coaching from this attempt.,PASS,./dataset\raw\squat\shallow\front\participant04_squat_shallow_front_set01.mp4,
+empty audio,STT failure and no invented question.,Audio file is missing or empty: ./dataset\processed\evaluation\technical_testing\empty_phase11_audio.wav,PASS,./dataset\processed\evaluation\technical_testing\empty_phase11_audio.wav,
+missing audio,STT failure and no invented question.,Audio file is missing or empty: ./dataset\processed\evaluation\technical_testing\missing_phase11_audio.wav,PASS,./dataset\processed\evaluation\technical_testing\missing_phase11_audio.wav,
+Gemma model unavailable,Clear failure stage; no fabricated coaching.,Intentional simulated Phase 11 Gemma failure.,PASS,simulated LLM client,
+empty Gemma response,Clear LLM failure; no fabricated answer.,Gemma returned an empty response.,PASS,simulated empty LLM client,
+TTS failure,Text coaching remains available; no fabricated audio.,Intentional simulated Phase 11 TTS failure.,PASS,simulated failing TTS,
+Whisper failure,Do not call Gemma with invented empty question.,Audio file is missing or empty: ./dataset\processed\evaluation\technical_testing\empty_phase11_orch_audio.wav,PASS,./dataset\processed\evaluation\technical_testing\empty_phase11_orch_audio.wav,

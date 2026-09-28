@@ -1,0 +1,5 @@
+source_video_id,require_ready,detected_reps,form_label,confidence_status
+vid06,False,10,correct,HIGH
+vid12,False,10,half_range,HIGH
+vid06,True,10,correct,HIGH
+vid12,True,9,half_range,HIGH

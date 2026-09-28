@@ -1,0 +1,4 @@
+model_name,library_version,device,model_size_mb,test_recordings,average_wer,median_wer,exact_match_rate,failed_transcriptions,mean_latency_seconds,mean_real_time_factor
+whisper_tiny,20250625,cpu,72.1,24,0.2848,0.2429,0.2083,0,0.4065,0.0813
+whisper_base,20250625,cpu,138.5,24,0.2383,0.1834,0.125,0,0.7212,0.1442
+whisper_small,20250625,cpu,461.2,24,0.1921,0.1429,0.2917,0,2.2729,0.4546
