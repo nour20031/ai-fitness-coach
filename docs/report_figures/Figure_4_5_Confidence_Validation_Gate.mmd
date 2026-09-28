@@ -1,6 +1,0 @@
-flowchart TB
-    A[Movement analysis result<br/>reps, angles, movement signal] --> B[Pose/data-quality + movement-evidence checks<br/>pose rate, required joints, angle calculability, dropout, movement signal, reps]
-    B --> C{Confidence decision}
-    C -->|LOW| D[Block normal coaching<br/>ask user to re-record]
-    C -->|HIGH| E[Evidence usable<br/>structured facts -> Gemma]
-    F[Thresholds: visibility >= 0.5; frames >= 15; pose >= 0.70; joints >= 0.65; angles >= 0.65; dropout <= 0.25; squat signal >= 10 deg; curl signal >= 20 deg]
